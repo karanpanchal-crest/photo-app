@@ -24,8 +24,8 @@ Rails.application.configure do
     :domain => "https://karan-photo-app.herokuapp.com",
     :authentication => :plain,
     enable_starttls_auto: true,
-    user_name: "karan.panchal@crestdatasys.com",
-    password: "thesilentwarrior"
+    :username => ENV["gmail_username"],
+    :password => ENV["gmail_password"]
   }
 
   # Enable Rack::Cache to put a simple HTTP cache in front of your application

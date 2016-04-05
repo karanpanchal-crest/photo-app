@@ -24,10 +24,10 @@ Rails.application.configure do
   :domain => "10.0.1.74:5000",
   :authentication => :plain,
   enable_starttls_auto: true,
-  user_name: "karan.panchal@crestdatasys.com",
-  password: "thesilentwarrior"
+  :username => ENV["gmail_username"],
+  :password => ENV["gmail_password"]
+  }
 
-}
 
   # Change mail delivery to :smtp
   #config.action_mailer.delivery_method = :smtp
