@@ -18,6 +18,16 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.default_url_options = { :host => 'https://karan-photo-app.herokuapp.com/'}
 
+  ActionMailer::Base.smtp_settings = {
+    :address => 'smtp.gmail.com',
+    :port => '587',
+    :domain => "https://karan-photo-app.herokuapp.com",
+    :authentication => :plain,
+    enable_starttls_auto: true,
+    user_name: "karan.panchal@crestdatasys.com",
+    password: "thesilentwarrior"
+  }
+
   # Enable Rack::Cache to put a simple HTTP cache in front of your application
   # Add `rack-cache` to your Gemfile before enabling this.
   # For large-scale production use, consider using a caching reverse proxy like
