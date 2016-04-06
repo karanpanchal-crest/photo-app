@@ -19,6 +19,10 @@ gem 'devise-bootstrap-views'
 gem 'stripe'
 gem 'figaro'
 
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'fog'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
