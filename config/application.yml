@@ -16,3 +16,6 @@ gmail_password: "thesilentwarrior"
 publishable_key: "pk_test_0GCvlL0UXfUfVEJ3mPfwxdOJ"
 secret_key: "sk_test_9raK5SjRnhJsrHootpGEf4n5"
 
+production:
+  gmail_username: "karan.panchal@crestdatasys.com"
+  gmail_password: "thesilentwarrior"
