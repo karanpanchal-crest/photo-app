@@ -4,7 +4,6 @@ $(document).ready(function(){
   
   submitHandler = function(event){
     var $form = $(event.target);
-    alert($form)
     $form.find("input[type=submit]").prop("disabled", true);
 
     //If stripe was initialized correctly, this will create a token using credit ard info

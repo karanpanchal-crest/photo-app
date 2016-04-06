@@ -24,7 +24,7 @@ Rails.application.configure do
     :domain => "https://karan-photo-app.herokuapp.com",
     :authentication => :plain,
     enable_starttls_auto: true,
-    :username => ENV["gmail_username"],
+    :user_name => ENV["gmail_username"],
     :password => ENV["gmail_password"]
   }
 
